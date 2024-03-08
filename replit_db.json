@@ -1,0 +1,159 @@
+{
+  "conversation_CA0f3e6199cb82422102a0b807310ff0b5": {
+    "startTimestamp": "2024-02-12T05:50:31.408Z",
+    "messages": [],
+    "endTimestamp": "2024-02-12T05:50:41.752Z",
+    "isActive": false
+  },
+  "conversation_CA0f421b4f047b7dcd97a7fe274743c649": {
+    "startTimestamp": "2024-02-12T05:47:05.253Z",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It's amazing.",
+        "timestamp": 1707716833583
+      },
+      {
+        "role": "system",
+        "content": "I know, right? The science fair is always mind-blowing! Any particular exhibit catching your eye?",
+        "timestamp": 1707716835368
+      },
+      {
+        "role": "user",
+        "content": "all of them",
+        "timestamp": 1707716851801
+      },
+      {
+        "role": "system",
+        "content": "Oh, I totally get it! It's hard to choose when everything is so fascinating. Let's explore together and see what we find!",
+        "timestamp": 1707716853447
+      },
+      {
+        "role": "user",
+        "content": "Sounds good.",
+        "timestamp": 1707716871971
+      },
+      {
+        "role": "system",
+        "content": "Awesome! Let's start by checking out that cool robotics exhibit over there. I heard they have some pretty impressive machines on display. Ready to be amazed?",
+        "timestamp": 1707716875264
+      },
+      {
+        "role": "user",
+        "content": "Sure, I think sighted.",
+        "timestamp": 1707716895249
+      },
+      {
+        "role": "system",
+        "content": "Great! Let's go check it out and see what those robots can do. I have a feeling we're in for a real treat!",
+        "timestamp": 1707716896860
+      },
+      {
+        "role": "user",
+        "content": "Okay. Well I got to go.",
+        "timestamp": 1707716914524
+      },
+      {
+        "role": "system",
+        "content": "Aw, already? That's a bummer. But hey, it was nice spending time with you at the science fair. If you ever want to hang out again, just let me know! Have a great day!",
+        "timestamp": 1707716918203
+      }
+    ],
+    "endTimestamp": "2024-02-12T05:48:52.966Z",
+    "isActive": false
+  },
+  "conversation_CA4b991f3d8b24df08ed479fad24278763": {
+    "startTimestamp": "2024-02-12T23:29:48.126Z",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It's absolutely amazing.",
+        "timestamp": 1707780596111
+      },
+      {
+        "role": "system",
+        "content": "Right? I'm loving all the cool science experiments here. Anything in particular catch your eye?",
+        "timestamp": 1707780597644
+      },
+      {
+        "role": "user",
+        "content": "Is a project in the back corner?",
+        "timestamp": 1707780614653
+      },
+      {
+        "role": "system",
+        "content": "Ooh, a mysterious project in the back corner? Sounds intriguing! Let's go check it out together.",
+        "timestamp": 1707780616312
+      }
+    ],
+    "isActive": false,
+    "endTimestamp": "2024-02-12T23:30:27.383Z"
+  },
+  "conversation_CA595198ffa572890c602c1966517b7563": {
+    "startTimestamp": "2024-02-12T18:02:49.610Z",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Absolutely amazing.",
+        "timestamp": 1707760992522
+      },
+      {
+        "role": "system",
+        "content": "Thank you! I'm glad you think so. What caught your eye at the science fair?",
+        "timestamp": 1707760993817
+      },
+      {
+        "role": "user",
+        "content": "average big",
+        "timestamp": 1707761009548
+      },
+      {
+        "role": "system",
+        "content": "Oh, I see! So you're interested in the big, eye-catching projects. Well, I'm sure there are plenty of those here. Anything in particular you'd like to check out?",
+        "timestamp": 1707761012198
+      }
+    ],
+    "isActive": false,
+    "endTimestamp": "2024-02-12T18:03:34.110Z"
+  },
+  "conversation_CA5e7f3d189ddbf2a795b8b0012bb970e2": {
+    "startTimestamp": "2024-02-12T05:52:54.112Z",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It was absolutely delightful.",
+        "timestamp": 1707717182409
+      },
+      {
+        "role": "system",
+        "content": "Oh, I'm so glad you enjoyed it! Isn't science fascinating?",
+        "timestamp": 1707717184105
+      }
+    ],
+    "isActive": false,
+    "endTimestamp": "2024-02-12T05:53:11.408Z"
+  },
+  "conversation_CAb85c101054e2fe9f6cce48c4eb1d0737": {
+    "startTimestamp": "2024-02-12T05:34:46.393Z",
+    "messages": [
+      {
+        "role": "user",
+        "content": "It's extremely interesting."
+      },
+      {
+        "role": "system",
+        "content": "Isn't it? I love seeing all the cool science projects. What caught your eye?"
+      },
+      {
+        "role": "user",
+        "content": "pretty much everything"
+      },
+      {
+        "role": "system",
+        "content": "Oh, I feel the same way! It's like a candy store for the brain. So many fascinating things to explore. Anything in particular you'd like to dive into?"
+      }
+    ],
+    "endTimestamp": "2024-02-12T05:35:27.672Z",
+    "isActive": false
+  }
+}

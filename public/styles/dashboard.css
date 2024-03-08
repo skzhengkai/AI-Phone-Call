@@ -1,0 +1,343 @@
+/* General resets and typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fa;
+  color: #333;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.search-container input,
+.search-container button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-container button {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Main content */
+main {
+  padding-top: 60px; /* Height of the header */
+  margin-left: 200px; /* Sidebar width */
+}
+
+.calls-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.call-card {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Stats section */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin: 10px;
+  flex: 0 0 calc(33.333% - 20px); /* Adjust the width here */
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.stat-card h3 {
+  color: #20c997;
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/* Modal */
+
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Status indicator styles */
+.status-indicator {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px; /* Slightly more padding for height */
+  border-radius: 15px; /* This creates the 'stadium' shape */
+  color: black; /* Changed text color to black */
+  font-size: 0.8em;
+  white-space: nowrap; /* Prevents the label from wrapping */
+  text-align: center;
+}
+
+.status-indicator.active {
+  background-color: #a5dfdf;
+}
+
+.status-indicator.follow-up {
+  background-color: #ffeb7b;
+  color: black;
+}
+
+.status-indicator.ended {
+  background-color: #ffa0b4;
+}
+
+/* New styles for call rows */
+.call-row {
+  border-bottom: 1px solid #eee;
+}
+
+.call-row:last-child {
+  border-bottom: none;
+}
+
+.call-headers > div,
+.call-row > div {
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.call-row > div.left-aligned,
+.call-headers > div.left-aligned {
+  text-align: left;
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+
+/* more tab css */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.tab {
+  margin-right: 20px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.active-tab {
+  border-bottom: 2px solid #333;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filter-dropdown {
+  padding: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#search-input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.call-headers,
+.call-row {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto; /* Adjust the column sizes */
+  align-items: center;
+  padding: 10px 0;
+}
+
+.call-headers {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* Sidebar */
+#sidebar {
+  background-color: #fff;
+  width: 200px;
+  position: fixed;
+  top: 63px;
+  left: 0;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 200; /* Make sure the sidebar is above the sticky header */
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.sidebar-links li a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-links li.active a,
+.sidebar-links li a:hover {
+  color: #20c997; /* Only text color is green for the active link */
+}
+
+/* Top Navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  top: 0;
+  position: sticky; /* Change this from fixed to sticky */
+  z-index: 100; /* Make sure the header is above other content */
+  width: 100%;
+  left: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.profile-info {
+  text-align: right;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-role {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.recent-calls {
+  margin-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-container {
+    display: block;
+  }
+
+  .stat-card {
+    flex: 0 0 100%; /* 1 item per row on even smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .stat-card {
+    flex: 0 0 calc(50% - 20px); /* 2 items per row on smaller screens */
+  }
+}

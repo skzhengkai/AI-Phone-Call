@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Voice Call Dashboard</title>
+  <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+  <body>
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <ul class="sidebar-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Calls</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Knowledge Base</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Extensions</a></li>
+    </ul>
+  </nav>
+  <header>
+    <!-- Logo on the left -->
+    <div class="logo">AI Voice Call Dashboard</div>
+
+    <!-- Search bar in the middle -->
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+
+    <!-- User profile on the right -->
+    <div class="profile-container">
+      <img src="path-to-profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <div class="profile-name">John Doe</div>
+        <div class="profile-role">Owner</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="stats-container" class="stats-container">
+      <div class="stat-card">
+        <p>Total Calls</p>
+        <h3 id="total-calls">0</h3>
+        <canvas id="total-calls-chart"></canvas>
+      </div>
+      <div class="stat-card">
+        <p>Total Messages</p>
+        <h3 id="total-messages">0</h3>
+        <canvas id="total-messages-chart"></canvas>
+      </div>
+      <div class="stat-card">
+        <p>Average Call Duration (minutes)</p>
+        <h3 id="average-call-duration">0</h3>
+        <canvas id="call-duration-chart"></canvas>
+      </div>
+    </section>
+
+    <h2 class="recent-calls">Recent Calls</h2>
+    <div id="calls-list" class="calls-container">
+
+      <div class="tabs">
+        <div class="tab active-tab">All Calls</div>
+        <!-- More tabs can be added here -->
+      </div>
+
+      <div class="search-bar-container">
+        <select id="filter-dropdown" class="filter-dropdown">
+          <option>Filter calls</option>
+          <!-- Additional filter options -->
+        </select>
+        <input type="text" id="search-input" placeholder="Search calls">
+      </div>
+      
+      <div class="call-headers">
+        <div>Call SID</div>
+        <div>Date</div>
+        <div>Customer</div>
+        <div>Call Status</div>
+        <div>Duration</div>
+      </div>
+      <!-- Dynamic call rows will be appended here -->
+    </div>
+    </main>
+    <!-- views/dashboard.ejs - Add this section within the <main> tag -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 AI Voice Call Dashboard</p>
+  </footer>
+
+  <!-- Call Details Modal -->
+  <div id="call-details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Call Details</h2>
+      <div id="call-details"></div>
+    </div>
+  </div>
+
+  <script src="/scripts/dashboard.js"></script>
+  <!-- Add this before your dashboard.js script tag -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
